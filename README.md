@@ -41,4 +41,4 @@ This indicates the `venv` virtual environment is running.  All commands issued a
 
 `(venv) some text$ pip install -r requirements.txt`
 
-This will make sure all dependencies are installed. 
+This will make sure all dependencies are installed.
