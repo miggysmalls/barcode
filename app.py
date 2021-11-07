@@ -13,3 +13,15 @@ def default_page():
         'status': 'Flask up!'
     }
     return app.make_response((dumps(message), codes.ok, flask_response_headers))
+
+
+@app.route('/about', methods=['GET'])
+def default_page():
+    message = {
+        'status': 'Flask up!'
+    }
+    return app.make_response((dumps(message), codes.ok, flask_response_headers))
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000, debug=True)
