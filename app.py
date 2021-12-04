@@ -24,6 +24,15 @@ def default_page():
     message = {
         'status': 'Flask up!'
     }
+    # return app.make_response((dumps(message), codes.ok, flask_response_headers))
+    return jsonify(message)
+
+
+@app.route('/about', methods=['GET'])
+def default_page():
+    message = {
+        'status': 'Flask up!'
+    }
     return app.make_response((dumps(message), codes.ok, flask_response_headers))
     # return app.make_response((json.dumps(message), requests.codes.ok, flask_response_headers))
     return jsonify(message)
